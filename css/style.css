@@ -321,6 +321,22 @@ ul.icons i {
 	color:gray;
 }
 
+ul.footer-icons {
+	list-style: none;
+	margin: 0;padding: 0;
+	display: flex;
+	justify-content: center;
+	color:white;
+	margin-right:5px;
+}
+ul.footer-icons li {
+	margin-right: 10px;	/*アイコン同士の余白*/
+}
+ul.footer-icons i {
+	font-size: 20px;	/*Font Awesomeのアイコンサイズ*/
+	color:white;
+}
+
 
 /*section
 ---------------------------------------------------------------------------*/
@@ -435,6 +451,8 @@ section {
 ---------------------------------------------------------------------------*/
 footer small {font-size: 100%;}
 footer {
+	display:flex;
+	flex-direction:column;
 	font-size: 0.8rem;
 	text-align: center;		/*内容をセンタリング*/
 	padding-bottom: 1rem;
