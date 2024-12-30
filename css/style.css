@@ -370,7 +370,7 @@ section {
 	color: #fff;	/*文字色*/
 }
 #section1::before {
-	background: url('../images/section1_portrait.jpg') no-repeat center center / cover;	/*背景画像の読み込み*/
+	background: url('../images/section1_portrait.jpg') no-repeat right right / cover;	/*背景画像の読み込み*/
 }
 
 /*section2の設定*/
@@ -1180,7 +1180,8 @@ footer h4 {
 ---------------------------------------------------------------------------*/
 /*冒頭の大きなロゴの飾り*/
 .logo-kazari {
-	background: url("../images/course/logo_kazari.svg") no-repeat center top / 70%;	/*ロゴ画像の読み込み。左上に配置し、幅は70%。*/
+	padding:5px;
+	background: url("../images/logo_kazari.svg") no-repeat center top / 70%;	/*ロゴ画像の読み込み。左上に配置し、幅は70%。*/
 }
 
 /*１枚目の写真*/
@@ -1258,7 +1259,8 @@ footer h4 {
 
 /*list1内のh3見出し内の１文字目の大きな文字*/
 .list1 h3 .large {
-	font-size: 7rem;	/*文字サイズを7倍*/
+	font-size: 4rem;	/*文字サイズを7倍*/
+	margin:3px, 0;
 }
 
 /*見出しの右上にある英語の小さな文字*/
@@ -1348,11 +1350,11 @@ footer h4 {
 
 /*横書きで使う際の指定。※縦書きを横書きにする為の指定ではないのでご注意下さい。*/
 .title-bg h2 .yoko {
-	font-size: 0.9rem;	/*文字サイズ90%*/
+	font-size: 1.5rem;	/*文字サイズ90%*/
 	margin-bottom: 3vw;	/*下に空けるスペース*/
 	letter-spacing: 0.1rem;	/*文字間隔を少しだけ広く*/
-	opacity: 0.5;	/*透明度50%*/
-
+	opacity: 0.9;	/*透明度50%*/
+	color:gray;
 }
 
 
@@ -1591,3 +1593,66 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 		background: rgba(0,0,0,0.5);
 		margin: 15px 0px 25px 0px;
 	}
+
+	/* 全体のスタイル */
+.pricing-container {
+  padding: 2rem;
+  background-color: white;
+  color: #333;
+  margin: 4rem 0;
+}
+
+/* タイトル */
+.pricing-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* 各セクション */
+.pricing-section {
+  margin-bottom: 2rem;
+}
+
+/* サブタイトル */
+.pricing-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* テーブル */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.table-header {
+  background-color: #f7f7f7;
+  font-weight: 500;
+}
+
+/* ノート（備考など） */
+.note {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* 使用教材リスト */
+.materials-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 0.875rem;
+  color: #333;
+}
