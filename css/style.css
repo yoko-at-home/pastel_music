@@ -264,7 +264,7 @@ main h3 {
 	position: fixed;z-index: 101;
 	cursor: pointer;
 	right: 30px;			/*右からの配置場所指定*/
-	bottom: 30px;				/*上からの配置場所指定*/
+	bottom: 60px;				/*上からの配置場所指定*/
 	padding: 16px 14px;		/*上下、左右への余白*/
 	width: 46px;			/*幅（３本バーが出ている場合の幅になります）*/
 	height: 46px;			/*高さ*/
