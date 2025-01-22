@@ -1717,7 +1717,19 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   margin-bottom: 0.5rem;
 }
 
+.admission-subtitle_center {
+	display: flex;
+	justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 .admission-text {
+  color: #555;
+}
+.admission-qa {
+	font-weight: bold;
   color: #555;
 }
 
@@ -1758,4 +1770,16 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.faq-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+.faq-toggle:checked + label + .faq-answer {
+  display: block; /* Show the answer when the checkbox is checked */
+}
+
+.faq-answer {
+  display: none; /* Hide the answer by default */
 }
