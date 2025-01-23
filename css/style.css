@@ -704,21 +704,6 @@ footer h4 {
 	font-size: 1.2rem;	/*文字サイズを120%*/
 }
 
-/*著作部分（※意図的に見えなくしたりしないで下さい。規約違反になります。）*/
-.pr a {
-	text-decoration: none;
-	display: block;
-	background: rgba(0,0,0,0.9);
-	text-align: right;
-	padding: 0.5rem 1rem;
-	color: #ccc;
-}
-.pr a::before {
-	font-family: "Font Awesome 6 Free";
-	content: "\e2ca";
-	font-weight: bold;
-	margin-right: 0.5em;
-}
 
 
 /*フッター内にあるソーシャルメディアのアイコン
@@ -1681,6 +1666,15 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 .admission-container {
   padding: 2rem;
   background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+.performance-container {
+  padding: 2rem;
+  background-color:  rgba(255, 255, 255, 0.8);
   color: #333;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
