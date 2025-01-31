@@ -244,28 +244,23 @@ main h3 {
 
 /* サブメニューのスタイル */
 #menubar nav .submenu {
-    display: none; /* サブメニューを非表示にする */
+    display: block; /* 常時表示に変更 */
     position: absolute; /* 絶対位置で配置 */
     background: rgba(194, 242, 242, 0.8) !important; /* 背景色を設定 */
     border: 1px solid rgba(255, 255, 255, 0.3); /* 枠線の設定 */
     z-index: 1000; /* 他の要素の上に表示 */
-    width: 150px; /* サブメニューの幅を設定 */
+    width: 150px !important; /* サブメニューの幅を設定 */
     right: 0; /* 右寄せにする */
     border-radius: 5px; /* 角を丸くする */
 }
 
-/* ホバー時にサブメニューを表示 */
-#menubar nav li:hover .submenu {
-    display: block; /* ホバー時にサブメニューを表示 */
-    background: rgba(194, 242, 242, 0.8) !important; /* 背景色を設定 */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* 枠線の設定 */
-}
+
 
 /* サブメニュー内のリンクのスタイル */
 #menubar nav .submenu a {
     text-decoration: none; /* 下線を消す */
     display: block; /* ブロック要素として表示 */
-    background: rgba(0, 0, 0, 0.5); /* 背景色 */
+    background: rgba(194, 242, 242, 0.8) !important;
     color: #fff; /* 文字色 */
     padding: 0.5rem; /* 余白 */
     margin: 0; /* マージンをリセット */
