@@ -43,7 +43,7 @@ html,body {
 	@media screen and (min-width:900px) {
 
 	html, body {
-		font-size: 14px;	/*基準となるフォントサイズ。*/
+		font-size: 1rem;	/*基準となるフォントサイズ。*/
 	}
 
 	}/*追加指定ここまで*/
@@ -242,6 +242,41 @@ main h3 {
 	border: 1px solid rgba(255,255,255,0.9);	/*枠線。透明度を変更して濃くします。*/
 }
 
+/* サブメニューのスタイル */
+#menubar nav .submenu {
+    display: none; /* サブメニューを非表示にする */
+    position: absolute; /* 絶対位置で配置 */
+    background: rgba(194, 242, 242, 0.8) !important; /* 背景色を設定 */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* 枠線の設定 */
+    z-index: 1000; /* 他の要素の上に表示 */
+    width: 150px; /* サブメニューの幅を設定 */
+    right: 0; /* 右寄せにする */
+    border-radius: 5px; /* 角を丸くする */
+}
+
+/* ホバー時にサブメニューを表示 */
+#menubar nav li:hover .submenu {
+    display: block; /* ホバー時にサブメニューを表示 */
+    background: rgba(194, 242, 242, 0.8) !important; /* 背景色を設定 */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* 枠線の設定 */
+}
+
+/* サブメニュー内のリンクのスタイル */
+#menubar nav .submenu a {
+    text-decoration: none; /* 下線を消す */
+    display: block; /* ブロック要素として表示 */
+    background: rgba(0, 0, 0, 0.5); /* 背景色 */
+    color: #fff; /* 文字色 */
+    padding: 0.5rem; /* 余白 */
+    margin: 0; /* マージンをリセット */
+    border-radius: 0; /* 角を丸くしない */
+}
+
+/* サブメニュー内のリンクのホバー時のスタイル */
+#menubar nav .submenu a:hover {
+    background: rgba(0, 0, 0, 0.9); /* 背景色を濃くする */
+    border: 1px solid rgba(255, 255, 255, 0.9); /* 枠線を濃くする */
+}
 /*900px以下画面でのメニュー
 ---------------------------------------------------------------------------*/
 /*メニューブロック全体*/
@@ -1652,7 +1687,7 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 
 /* ノート（備考など） */
 .note {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #666;
   margin-bottom: 1rem;
 }
