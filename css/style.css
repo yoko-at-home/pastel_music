@@ -244,7 +244,7 @@ main h3 {
 
 /* サブメニューのスタイル */
 #menubar nav .submenu {
-    display: block; /* 常時表示に変更 */
+    display: block !important;
     position: absolute; /* 絶対位置で配置 */
     background: rgba(194, 242, 242, 0.8) !important; /* 背景色を設定 */
     border: 1px solid rgba(255, 255, 255, 0.3); /* 枠線の設定 */
