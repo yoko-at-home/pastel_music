@@ -332,3 +332,20 @@ $(document).ready(() => {
       });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const courseLink = document.querySelector('a[href="#course"]');
+  const submenu = document.querySelector(".submenu");
+
+  courseLink.addEventListener("click", (event) => {
+    // サブメニューが開いている場合は閉じる
+    if (submenu.style.display === "block") {
+      submenu.style.display = "none";
+    } else {
+      // サブメニューが閉じている場合は、#courseにスクロール
+      window.location.hash = "#course";
+      submenu.style.display = "block"; // サブメニューを常時表示
+    }
+    event.preventDefault(); // デフォルトのリンク動作を防ぐ
+  });
+});
