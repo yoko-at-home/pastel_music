@@ -1780,3 +1780,11 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 .faq-answer {
   display: none; /* Hide the answer by default */
 }
+
+.signature {
+  text-align: right;
+  font-size: 1.25rem;
+  color: #FFF;
+  margin-bottom: 1rem;
+	line-height: 1.5;
+}
