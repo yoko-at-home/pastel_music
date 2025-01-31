@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
   courseLink.addEventListener("click", (event) => {
     // サブメニューが開いている場合は閉じる
     if (submenu.style.display === "block") {
-      submenu.style.display = "none";
+      submenu.style.display = "block";
     } else {
       // サブメニューが閉じている場合は、#courseにスクロール
       window.location.hash = "#course";
