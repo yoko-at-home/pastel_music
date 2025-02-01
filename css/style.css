@@ -198,6 +198,10 @@ main h2 {
 	font-size: 2.5rem;	/*文字サイズを2.5倍*/
 }
 
+main h2 span {
+	font-size: 1.5rem;	/*文字サイズを2.5倍*/
+}
+
 /*main内のh3*/
 main h3 {
 	font-size: 1.5rem;	/*文字サイズを1.5倍*/
@@ -370,6 +374,12 @@ ul.footer-icons i {
 	color:white;
 }
 
+ul.profile-list {
+  list-style-type: square;
+  padding: 5px;
+  margin-left: 20px;
+	/* font-weight: 200; */
+}
 
 /*section
 ---------------------------------------------------------------------------*/
@@ -1817,4 +1827,13 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   color: #FFF;
   margin-bottom: 1rem;
 	line-height: 1.5;
+}
+.profile-name {
+  font-size: 1.5rem;
+  color: #FFF;
+  margin-bottom: 1rem;
+	line-height: 1.75;
+}
+.profile-name span {
+  font-size: 1.0rem;
 }
