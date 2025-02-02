@@ -1789,6 +1789,7 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 
 .text-purple {
   color:#A973F5;
+	text-decoration: none;
 }
 
 /* Map container */
@@ -1836,4 +1837,11 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 }
 .profile-name span {
   font-size: 1.0rem;
+}
+
+.bold {
+	font-weight: bold;
+}
+.semibold {
+	font-weight: 500;
 }
