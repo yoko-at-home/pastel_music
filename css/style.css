@@ -1875,6 +1875,7 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   position: relative;
   width: 100%;
   padding-top: 56.25%; /* 16:9 アスペクト比 */
+	margin-bottom: 2rem;
 }
 
 .video_iframe {
