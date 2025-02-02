@@ -1839,9 +1839,35 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   font-size: 1.0rem;
 }
 
+
 .bold {
 	font-weight: bold;
 }
 .semibold {
 	font-weight: 500;
+}
+
+.button-style {
+    display: inline-block;
+		align-items: center;
+    padding: 5px 10px; /* Adjust padding as needed */
+    background-color: #f7b7b7; /* Match the theme color */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+		 text-align: center;
+}
+
+.button-style:hover {
+    background-color: #f57af3; /* Darker shade on hover */
+		color: #fff;
+}
+
+/* Assuming the parent container has a class, for example, .button-container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 5px 10px; /* Adjust padding as needed */
 }
