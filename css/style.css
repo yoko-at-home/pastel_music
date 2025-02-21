@@ -1398,7 +1398,7 @@ footer h4 {
 
 /*横書きで使う際の指定。※縦書きを横書きにする為の指定ではないのでご注意下さい。*/
 .title-bg h2 .yoko {
-	font-size: 1.5rem;	/*文字サイズ90%*/
+	font-size: 1.5rem;	文字サイズ90%
 	margin-bottom: 3vw;	/*下に空けるスペース*/
 	letter-spacing: 0.1rem;	/*文字間隔を少しだけ広く*/
 	opacity: 0.9;	/*透明度50%*/
@@ -1690,18 +1690,13 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   font-weight: 500;
 }
 
-/* ノート（備考など） */
-.note {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
+
 
 /* 使用教材リスト */
 .materials-list {
   list-style-type: disc;
   padding-left: 1.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #333;
 }
 
@@ -1889,4 +1884,11 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 .responsive-logo {
     font-size: 2.5vw; /* Adjusts font size based on viewport width */
     white-space: nowrap; /* Prevents line breaks */
+}
+
+/* モバイル用のフォントサイズ設定 */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16.25px; /* 13px * 1.25 = 16.25px */
+    }
 }
