@@ -4,6 +4,7 @@
 /*Google Fontsの読み込み
 ---------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /*Font Awesomeの読み込み
 ---------------------------------------------------------------------------*/
@@ -36,7 +37,7 @@
 body * {box-sizing: border-box;}
 html,body {
 	height: 100%;
-	font-size: 13px;	/*基準となるフォントサイズ。*/
+	font-size: 14px;	/*基準となるフォントサイズ。*/
 }
 
 	/*画面幅900px以上の追加指定*/
@@ -56,7 +57,7 @@ html,body {
 }
 
 body {
-	font-family: "M PLUS 1", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-family: "M PLUS 1p", "M PLUS 1", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-weight: 300;
 	font-optical-sizing: auto;
 	letter-spacing: 0.1rem;
@@ -1096,12 +1097,13 @@ footer h4 {
 
 /*faq内のh4見出し（「とても満足です。」のところ）*/
 .list-yoko-scroll h4 {
+	font-size: 1.75rem;
 	margin-bottom: 1rem;	/*下に１文字分のスペースを空ける*/
 }
 
 /*faq内のp段落（「とても満足です。」の下のテキスト）*/
 .list-yoko-scroll p {
-	font-size: 0.9rem;	/*文字サイズを90%に*/
+	font-size: 1.25rem;	/*文字サイズを90%に*/
 }
 
 /*お客様の名前*/
@@ -1703,7 +1705,6 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 .materials-list {
   list-style-type: disc;
   padding-left: 1.5rem;
-  font-size: 1.25rem;
   color: #333;
 }
 
@@ -1841,6 +1842,9 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   font-size: 1.0rem;
 }
 
+.profile-name p {
+  font-size: 1.25rem;
+}
 
 .bold {
 	font-weight: bold;
@@ -1898,3 +1902,5 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 .info-list {
 	margin-left: 1.25rem;
 }
+
+.wf-mplus1p { font-family: "M PLUS 1p"; }
