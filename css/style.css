@@ -1097,13 +1097,13 @@ footer h4 {
 
 /*faq内のh4見出し（「とても満足です。」のところ）*/
 .list-yoko-scroll h4 {
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 	margin-bottom: 1rem;	/*下に１文字分のスペースを空ける*/
 }
 
 /*faq内のp段落（「とても満足です。」の下のテキスト）*/
 .list-yoko-scroll p {
-	font-size: 1rem;	/*文字サイズを90%に*/
+	font-size: 0.9rem;	/*文字サイズを90%に*/
 }
 
 /*お客様の名前*/
