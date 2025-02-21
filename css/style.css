@@ -48,6 +48,13 @@ html,body {
 
 	}/*追加指定ここまで*/
 
+	/* モバイル用のフォントサイズ設定 */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16.25px; /* 13px * 1.25 = 16.25px */
+    }
+}
+
 body {
 	font-family: "M PLUS 1", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-weight: 300;
@@ -1696,7 +1703,7 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 .materials-list {
   list-style-type: disc;
   padding-left: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #333;
 }
 
@@ -1886,9 +1893,8 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
     white-space: nowrap; /* Prevents line breaks */
 }
 
-/* モバイル用のフォントサイズ設定 */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16.25px; /* 13px * 1.25 = 16.25px */
-    }
+
+
+.info-list {
+	margin-left: 1.25rem;
 }
