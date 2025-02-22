@@ -1243,7 +1243,7 @@ footer h4 {
 
 /*１枚目の写真*/
 .list1.image1 {
-	background: url("../images/course/1.jpg") no-repeat center center / cover;
+	background: url("../images/course/1.jpg") no-repeat center left / cover;
 }
 
 /*２枚目の写真*/
