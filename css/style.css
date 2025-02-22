@@ -411,7 +411,7 @@ section {
 /*４つのsectionブロックの共通設定*/
 #section1,#section2,#section3,#section4 {
 	min-height: calc(100dvh - 50px);	/*最低の高さ。100dvhは画面の高さ100%のこと。50pxは下のmarginの値。*/
-	margin-bottom: 50px;	/*ボックスの下に空けるスペース*/
+	margin-bottom: 200px;	/*ボックスの下に空けるスペース*/
 	padding: 5vw;			/*ボックス内の余白*/
 }
 	/*画面幅900px以上の追加指定*/
@@ -444,7 +444,7 @@ section {
 
 /*section2の設定*/
 #section2 {
-	background-color: rgba(179, 63, 0,0.7);	/*背景色。３つ目までの数字はrgbでの色指定。最後の小数点は透明度。*/
+	background-color: rgba(30, 11, 1, 0.6);	/*背景色。３つ目までの数字はrgbでの色指定。最後の小数点は透明度。*/
 	color: #fff;	/*文字色*/
 }
 #section2::before {
@@ -470,7 +470,7 @@ section {
 
 /*section5の設定*/
 #section5 {
-	background-color: rgba(240, 109, 26,0.6);	/*背景色。３つ目までの数字はrgbでの色指定。最後の小数点は透明度。*/
+	background-color: rgba(30, 11, 1, 0.7);	/*背景色。３つ目までの数字はrgbでの色指定。最後の小数点は透明度。*/
 	color: #fff;	/*文字色*/
 }
 #section5::before {
@@ -615,7 +615,7 @@ footer a {color: inherit;text-decoration: none;}
 .mb30 {margin-bottom: 30px !important;}
 .look {display: inline-block;padding: 0px 10px;background: #000;border: 1px solid #fff;border-radius: 3px;margin: 5px 0; word-break: break-all;}
 .small {font-size: 0.75em;}
-.large {font-size: 2em; letter-spacing: 0.1em;}
+.large {font-size: 1.5rem; letter-spacing: 0.1em;}
 .color-check, .color-check a {color: #ffcf0d;}
 .pc {display: none;}
 .dn {display: none !important;}
@@ -1597,7 +1597,7 @@ footer h4 {
 ---------------------------------------------------------------------------*/
 /*並べ替え*/
 .order1 {
-	order: 1;	/*orderは数字の小さな順番に並びます。デフォルトは0なので、それより後ろに表示させたいブロックに使います。（※flex内で使用）*/
+	order: 1;	/*orderは数字の小さな順番に並びます。デフォルトは0なので、それより後ろに表f示させたいブロックに使います。（※flex内で使用）*/
 }
 
 .padding0 {
@@ -1674,9 +1674,12 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 
 /* サブタイトル */
 .pricing-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
+	border-bottom: 3px dotted #ccc;
+	border-top: 3px dotted #ccc;
+
 }
 
 /* テーブル */
@@ -1794,6 +1797,10 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
   color:#A973F5;
 	text-decoration: none;
 }
+.text-keycolor {
+  color:#31bdad;
+	text-decoration: none;
+}
 
 /* Map container */
 .map-container {
@@ -1834,7 +1841,7 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 }
 .profile-name {
   font-size: 1.5rem;
-  color: #FFF;
+	color: #f7b7b7;
   margin-bottom: 1rem;
 	line-height: 1.75;
 }
@@ -1918,7 +1925,8 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
     left: 0;
     width: 100%;
     z-index: 9999;
-		background-color: rgba(247, 183, 183, 0.8);
+		background-color: rgba(247, 183, 183);
+		  transform: translateZ(1px); /* 3D空間に移動させる */
 }
 
 /* レスポンシブ対応 */
@@ -1941,3 +1949,14 @@ pre {white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;}
 }
 
 /* ... existing code ... */
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+.profile-container2 {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
