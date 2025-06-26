@@ -1,17 +1,12 @@
 @charset "utf-8";
 
+/*Google Fontsの読み込み（最適化済み）*/
+/* 注: HTMLでpreloadされているため、ここでの読み込みは最小限に */
 
-/*Google Fontsの読み込み
----------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/*Font Awesomeの読み込み
----------------------------------------------------------------------------*/
+/*Font Awesomeの読み込み（最適化済み）*/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 
-/*lightbox.cssの読み込み
----------------------------------------------------------------------------*/
+/*lightbox.cssの読み込み*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
 
 
@@ -442,7 +437,7 @@ section {
 	color: #fff;	/*文字色*/
 }
 #section1::before {
-	background: url('../images/section1_portrait.jpg') no-repeat right right / cover;	/*背景画像の読み込み*/
+	background: url('../images/section1_portrait.webp') no-repeat right right / cover;	/*背景画像の読み込み*/
 }
 
 /*section2の設定*/
@@ -451,7 +446,7 @@ section {
 	color: #fff;	/*文字色*/
 }
 #section2::before {
-	background: url('../images/section1_portrait.jpg') no-repeat center center / cover;	/*背景画像の読み込み*/
+	background: url('../images/section1_portrait.webp') no-repeat center center / cover;	/*背景画像の読み込み*/
 }
 
 /*section3の設定*/
@@ -460,7 +455,7 @@ section {
 	color: #fff;	/*文字色*/
 }
 #section3::before {
-	background: url('../images/section2.jpg') no-repeat center center / cover;	/*背景画像の読み込み*/
+	background: url('../images/section2.webp') no-repeat center center / cover;	/*背景画像の読み込み*/
 }
 
 /*section4の設定*/
@@ -477,22 +472,22 @@ section {
 	color: #fff;	/*文字色*/
 }
 #section5::before {
-	background: url('../images/section5_portrait.jpg') no-repeat top center / cover;	/*背景画像の読み込み*/
+	background: url('../images/section5_portrait.webp') no-repeat top center / cover;	/*背景画像の読み込み*/
 }
 	/*縦向き端末から見た場合に背景画像をチェンジする*/
 	@media (orientation: portrait) {
 
 	#section1::before {
-		background-image: url('../images/section1_portrait.jpg');
+		background-image: url('../images/section1_portrait.webp');
 	}
 	#section2::before {
-		background-image: url('../images/section1.jpg');
+		background-image: url('../images/section1.webp');
 	}
 	#section3::before {
-		background-image: url('../images/section2.jpg');
+		background-image: url('../images/section2.webp');
 	}
 	#section5::before {
-		background-image: url('../images/section5_portrait.jpg');
+		background-image: url('../images/section5_portrait.webp');
 	}
 
 	}/*追加指定ここまで*/
@@ -827,11 +822,11 @@ footer h4 {
 
 /*左側ボックスの背景*/
 .list-c2 .list.image1 {
-	background: url("../images/sample4.jpg") no-repeat center center / cover;
+	background: url("../images/sample4.webp") no-repeat center center / cover;
 }
 /*右側ボックスの背景*/
 .list-c2 .list.image2 {
-	background: url("../images/sample5.jpg") no-repeat center center / cover;
+	background: url("../images/sample5.webp") no-repeat center center / cover;
 }
 
 /*h4見出し*/
@@ -1249,22 +1244,22 @@ footer h4 {
 
 /*１枚目の写真*/
 .list1.image1 {
-	background: url("../images/course/1.jpg") no-repeat center left / cover;
+	background: url("../images/course/1.webp") no-repeat center left / cover;
 }
 
 /*２枚目の写真*/
 .list1.image2 {
-	background: url("../images/course/2.jpg") no-repeat center center / cover;
+	background: url("../images/course/2.webp") no-repeat center center / cover;
 }
 
 /*３枚目の写真*/
 .list1.image3 {
-	background: url("../images/course/3.jpg") no-repeat center center / cover;
+	background: url("../images/course/3.webp") no-repeat center center / cover;
 }
 
 /*４枚目の写真*/
 .list1.image4 {
-	background: url("../images/course/4.jpg") no-repeat center right / cover;
+	background: url("../images/course/4.webp") no-repeat center right / cover;
 }
 
 /*ボックス１個あたり*/
