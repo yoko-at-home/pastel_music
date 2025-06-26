@@ -11,9 +11,14 @@
 <meta name="color-scheme" content="light">
 
 <!-- Preload critical resources -->
-<link rel="preload" href="css/style.css" as="style">
+<!-- <link rel="preload" href="css/style.css" as="style"> -->
+<link rel="preload" href="css/style.min.css" as="style">
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" as="style">
 <link rel="preload" href="images/course/logo.png" as="image">
+<link rel="preload" href="images/section1_portrait.webp" as="image">
+<link rel="preload" href="images/section2.webp" as="image">
+<link rel="preload" href="images/section5_portrait.webp" as="image">
+<link rel="preload" href="images/fluete&Ocarina.webp" as="image">
 
 <!-- Preconnect to external domains -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,8 +35,9 @@
 <link rel="manifest" href="manifest.json">
 
 <!-- Stylesheets -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap&display=swap">
 
 <title>パステル音楽教室 - フルート・オカリナレッスン | 座間市相模が丘</title>
 
@@ -132,13 +138,14 @@
 
 </header>
 
-<h2 class="video-title"><img src="images/fluete&Ocarina.png" alt="Flute&Ocarina|パステル音楽教室ロゴ"> </h2>
+<h2 class="video-title"><img src="images/fluete&Ocarina.webp" alt="Flute&Ocarina|パステル音楽教室ロゴ" loading="eager"
+    fetchpriority="high"> </h2>
 <div id="video">
-<video src="images/movie_landscape.mp4" autoplay loop muted playsinline class="landscape"></video>
-<video src="images/movie_portrait.mp4" autoplay loop muted playsinline class="portrait"></video>
+<video src="images/movie_landscape.mp4" autoplay loop muted playsinline class="landscape" preload="none"></video>
+<video src="images/movie_portrait.mp4" autoplay loop muted playsinline class="portrait" preload="none"></video>
 </div>
 
-<main>
+<main id="main-content">
 
 
 
@@ -420,7 +427,7 @@
       <p>
         寒い日も暑い日も笑顔で迎えてくれます。もちろんレッスン中も余裕の笑顔なのですが、アドバイスは的確すぎて、こちらは顔が引き攣り、うまく音が出ず凹んでしまいます。それでも満面の笑顔で送り出されると、また頑張ろう！と博子先生の魔法にかかってしまうのです。
       </p>
-      <p class="name">町田市　T.K.様 <img src="images/koe/1.png" alt=""></p>
+      <p class="name">町田市　T.K.様 <img src="images/koe/1.webp" alt=""></p>
     </div>
 
     <div class="list">
@@ -428,7 +435,7 @@
       <p class="text">
         菅先生のオカリナ演奏を聴いた時に私もオカリナを習いたい！と思い立ちレッスンしていただいています。初めて聴＜オカリナの優しく美しい音色に心惹かれました。レッスン中の先生のオカリナの音に聞き惚れたり、楽譜の読み方も教えて頂きつつ自分で奏でる事の楽しさを教えていただいています。最近先生とデュエットして頂く事も多くなり更に楽しさが増しています。
       </p>
-      <p class="name">横浜市　M.K.様<img src="images/koe/2.png" alt=""></p>
+      <p class="name">横浜市　M.K.様<img src="images/koe/2.webp" alt=""></p>
     </div>
     <div class="list">
       <h4>🪈対面レッスン🪈</h4>
@@ -438,7 +445,7 @@
         毎週のレッスン日は今や欠かすことのできない心のオアシスであり、人生の大切な潤いです。<br />
         これからも楽しく続けていきたいです。
       </p>
-      <p class="name">厚木市　A.T.様<img src="images/koe/3.png" alt=""></p>
+      <p class="name">厚木市　A.T.様<img src="images/koe/3.webp" alt=""></p>
     </div>
     <div class="list">
       <h4>🪈対面レッスン🪈</h4>
@@ -448,7 +455,7 @@
         ジャンルの違うさまざまな曲を時間をかけて仕上げていくのは楽しく充実感があります。
         フルートのある日常は今ではなくてはならないもので私にとってとても幸せな時間です。
       </p>
-      <p class="name">伊勢原市　S.T.様<img src="images/koe/1.png" alt=""></p>
+      <p class="name">伊勢原市　S.T.様<img src="images/koe/1.webp" alt=""></p>
     </div>
     <div class="list">
       <h4>🪈対面レッスン🪈</h4>
@@ -456,12 +463,12 @@
         フルートを奏でてみたい思いは以前からあったのですが、吹奏楽器を手にするのは小学生時代のリコーダー以外は未経験で不安の方が大きかった私でした。<br />
         博子先生のご指導のもとレッスンを始めて良かったと、今すごく感じてます。優しいお人柄とフルートをこよなく愛するお気持ちが最大の魅力です。今では毎週のレッスンが待ち遠しいです。
       </p>
-      <p class="name">茅ヶ崎市　Y.T.様<img src="images/koe/2.png" alt=""></p>
+      <p class="name">茅ヶ崎市　Y.T.様<img src="images/koe/2.webp" alt=""></p>
       </div>
       <div class="list">
   <h4>🪈オンライン・レッスン🪈</h4>
   <p class="text">コロナ禍の流れで月一回はリモートレッスンですが、心地良い集中を味わっています。良くも悪くも音の変化や響きの違いを指摘してもらい、一人部屋で汗をかいています💦</p>
-  <p class="name">町田市　T.K.様<img src="images/koe/3.png" alt=""></p>
+  <p class="name">町田市　T.K.様<img src="images/koe/3.webp" alt=""></p>
 </div>
 
 
@@ -482,7 +489,7 @@
       <p class="profile-name">フルート・オカリナ講師 <br />菅 博子<span>（Hiroko Kan）</span></p>
   </div>
   <img style="width: 130px; border-radius: 50%; border: 10px dotted #f7b7b7;" src="images/section5_portrait.webp"
-    alt="フルート奏者 菅博子">
+    alt="フルート奏者 菅博子" loading="lazy">
   </div>
 
     玉川大学芸術学科音楽専攻フルート課程卒業。<br />
@@ -679,103 +686,103 @@
 <h2 id="gallery" style="color: #f7b7b7;">Gallery</h2>
 <p></p>
 
-<p>講師や生徒様方の演奏活動、レッスン室などを紹介させていただいております。</p>
+<p style="color: white;">講師や生徒様方の演奏活動、レッスン室などを紹介させていただいております。</p>
 
 <div class="list-grid-trimming">
 
 <div class="list">
 <a href="images/gallery/1.webp" data-lightbox="group1" data-title="岸本江理子リサイタルゲスト演奏　ムジカーザにて">
-  <img src="images/gallery/1.webp" alt="">
+  <img src="images/gallery/1.webp" alt="岸本江理子リサイタルゲスト演奏" loading="lazy">
 </a>
 </div>
 
 <div class="list">
 <a href="images/gallery/2.webp" data-lightbox="group1" data-title="フルートアンサンブル「リアン」コンサート">
-  <img src="images/gallery/2.webp" alt="">
+  <img src="images/gallery/2.webp" alt="フルートアンサンブル「リアン」コンサート" loading="lazy">
 </a>
 </div>
 
 <div class="list">
 <a href="images/gallery/4.webp" data-lightbox="group1" data-title="フルートアンサンブル「リアン」コンサート">
 
-  <img src="images/gallery/4.webp" alt="">
+  <img src="images/gallery/4.webp" alt="フルートアンサンブル「リアン」コンサート" loading="lazy">
 </a>
 </div>
 <div class="list">
 <a href="images/gallery/3.webp" data-lightbox="group1" data-title="世代をこえてアンサンブルコンサート2部、講師演奏">
-  <img src="images/gallery/3.webp" alt="">
+  <img src="images/gallery/3.webp" alt="世代をこえてアンサンブルコンサート2部、講師演奏" loading="lazy">
 </a>
 </div>
 
 <div class="list">
 <a href="images/gallery/5.webp" data-lightbox="group1" data-title="ハーモニーParty  オカリナアンサンブル">
-  <img src="images/gallery/5.webp" alt="">
+  <img src="images/gallery/5.webp" alt="ハーモニーParty オカリナアンサンブル" loading="lazy">
 </a>
 </div>
 
 <div class="list">
 <a href="images/gallery/6.webp" data-lightbox="group1" data-title="ハーモニーParty フルートトリオ">
-  <img src="images/gallery/6.webp" alt="">
+  <img src="images/gallery/6.webp" alt="ハーモニーParty フルートトリオ" loading="lazy">
 </a>
 </div>
 
 <div class="list">
 <a href="images/gallery/7.webp" data-lightbox="group1" data-title="ハーモニーParty 講師演奏">
-  <img src="images/gallery/7.webp" alt="">
+  <img src="images/gallery/7.webp" alt="ハーモニーParty 講師演奏" loading="lazy">
 </a>
 </div>
 
 <div class="list">
 <a href="images/gallery/8.webp" data-lightbox="group1" data-title="ハーモニーParty 会場風景">
-  <img src="images/gallery/8.webp" alt="">
+  <img src="images/gallery/8.webp" alt="ハーモニーParty 会場風景" loading="lazy">
 </a>
 </div>
 
 <div class="list">
-<a href="images/gallery/9.webp" data-lightbox="group1" data-title="ハーモニーParty 集合写真">
-  <img src="images/gallery/9.webp" alt="">
-</a>
+  <a href="images/gallery/9.webp" data-lightbox="group1" data-title="ハーモニーParty 集合写真">
+    <img src="images/gallery/9.webp" alt="ハーモニーParty 集合写真" loading="lazy">
+    </a>
 </div>
 
 <div class="list">
   <a href="images/gallery/room1.webp" data-lightbox="group1" data-title="レッスン室風景">
-    <img src="images/gallery/room1.webp" alt="">
+    <img src="images/gallery/room1.webp" alt="レッスン室風景" loading="lazy">
   </a>
 </div>
 
 <div class="list">
   <a href="images/gallery/room2.webp" data-lightbox="group1" data-title="レッスン室風景">
-    <img src="images/gallery/room2.webp" alt="">
+    <img src="images/gallery/room2.webp" alt="レッスン室風景" loading="lazy">
   </a>
   </div>
 
   <div class="list">
     <a href="images/gallery/room3.webp" data-lightbox="group1" data-title="レッスン室風景">
-      <img src="images/gallery/room3.webp" alt="">
+      <img src="images/gallery/room3.webp" alt="レッスン室風景" loading="lazy">
     </a>
     </div>
     <!-- 追加2024/1/22 -->
     <div class="list">
       <a href="images/gallery/13.webp" data-lightbox="group1" data-title="レッスン風景">
-        <img src="images/gallery/13.webp" alt="">
+        <img src="images/gallery/13.webp" alt="レッスン風景" loading="lazy">
       </a>
     </div>
 
     <div class="list">
       <a href="images/gallery/14.webp" data-lightbox="group1" data-title="レッスン風景">
-        <img src="images/gallery/14.webp" alt="">
+        <img src="images/gallery/14.webp" alt="レッスン風景" loading="lazy">
       </a>
     </div>
 
     <div class="list">
       <a href="images/gallery/15.webp" data-lightbox="group1" data-title="レッスン風景">
-        <img src="images/gallery/15.webp" alt="">
+        <img src="images/gallery/15.webp" alt="レッスン風景" loading="lazy">
       </a>
     </div>
 
     <div class="list">
       <a href="images/gallery/16.webp" data-lightbox="group1" data-title="保育園コンサート">
-        <img src="images/gallery/16.webp" alt="">
+        <img src="images/gallery/16.webp" alt="保育園コンサート" loading="lazy">
 </a>
 </div>
 
@@ -787,9 +794,9 @@
 <section id="section4" class="section">
 
   <h2 id="links" style="color: #f7b7b7;">Links</h2>
-  <p>講師活動紹介</p>
+  <p style="color: white;">講師活動紹介</p>
 
-  <p>講師の活動やニュース、お問合せ等に便利なLINE登録リンクをご紹介しています。</p>
+  <p style="color: white;">講師の活動やニュース、お問合せ等に便利なLINE登録リンクをご紹介しています。</p>
 
   <div class="list-grid-trimming">
 
@@ -818,7 +825,7 @@
     <div class="list">
       <a href="https://store.piascore.com/search?i=&amp;amp;n=%E3%82%AA%E3%82%AB%E3%83%AA%E3%83%8A%E3%80%80pastel+harmony"
         target="_blank">
-        <img src="images/links/piascore.png" alt="instagram">
+        <img src="images/links/piascore.webp" alt="instagram">
       </a>
     </div>
   </div>
@@ -859,13 +866,28 @@
 </div>
 
 <!--jQueryの読み込み-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!--lightbox用jsファイルの読み込み-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js" defer></script>
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js" defer></script>
+
+<!-- Service Worker Registration -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function (registration) {
+          console.log('SW registered: ', registration);
+        })
+        .catch(function (registrationError) {
+          console.log('SW registration failed: ', registrationError);
+        });
+    });
+  }
+</script>
 
 </body>
 </html>
