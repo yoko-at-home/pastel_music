@@ -4,41 +4,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="パステル音楽教室のHPです">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta name="description" content="フルートとオカリナのレッスンを通じて音楽を楽しみませんか？">
-  <meta name="keywords" content="小田急相模原,音楽教室,オカリナ,フルート,オンラインレッスン,YouTuber,">
+  <meta name="description" content="フルートとオカリナのレッスンを通じて音楽を楽しみませんか？パステル音楽教室は座間市相模が丘にある個人教室です。">
+  <meta name="keywords" content="小田急相模原,音楽教室,オカリナ,フルート,オンラインレッスン,YouTuber,座間市">
   <meta name="author" content="パステル音楽教室">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f7b7b7">
+  <meta name="color-scheme" content="light">
+  
+  <!-- Preload critical resources -->
+  <!-- <link rel="preload" href="css/style.css" as="style"> -->
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" as="style">
+  <link rel="preload" href="images/course/logo.png" as="image">
+  <link rel="preload" href="images/section1_portrait.webp" as="image">
+  <link rel="preload" href="images/section2.webp" as="image">
+  <link rel="preload" href="images/section5_portrait.webp" as="image">
+  <link rel="preload" href="images/fluete&Ocarina.webp" as="image">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+  
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Stylesheets -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap&display=swap">
 
-  <title>パステル音楽教室</title>
+  <title>パステル音楽教室 - フルート・オカリナレッスン | 座間市相模が丘</title>
 
-  <meta property="og:title" content="パステル音楽教室">
-  <meta property="og:description" content="フルートとオカリナのレッスンを通じて音楽を楽しみませんか？">
-  <meta property="og:image" content="https://www.pastel-music.com/images/favicon.png">
+  <!-- Open Graph -->
+  <meta property="og:title" content="パステル音楽教室 - フルート・オカリナレッスン">
+  <meta property="og:description" content="フルートとオカリナのレッスンを通じて音楽を楽しみませんか？座間市相模が丘にある個人教室です。">
+  <meta property="og:image" content="https://www.pastel-music.com/images/SNS/sns_ogp.png">
   <meta property="og:url" content="https://www.pastel-music.com">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="パステル音楽教室">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="パステル音楽教室 - フルート・オカリナレッスン">
+  <meta name="twitter:description" content="フルートとオカリナのレッスンを通じて音楽を楽しみませんか？座間市相模が丘にある個人教室です。">
+  <meta name="twitter:image" content="https://www.pastel-music.com/images/SNS/sns_ogp.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicSchool",
+      "name": "パステル音楽教室",
+      "description": "フルートとオカリナのレッスンを通じて音楽を楽しむ個人教室",
+      "url": "https://www.pastel-music.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "座間市",
+        "addressRegion": "神奈川県",
+        "addressCountry": "JP"
+      },
+      "telephone": "+81-",
+      "email": "puretone.fo.88@gmail.com",
+      "founder": {
+        "@type": "Person",
+        "name": "菅 博子",
+        "jobTitle": "フルート・オカリナ講師"
+      },
+      "sameAs": [
+        "https://youtube.com/@hirokoflute",
+        "https://youtube.com/@hirokoocarina",
+        "https://www.instagram.com/fl_puretone"
+      ]
+    }
+    </script>
 
 </head>
 
 <body>
 
-  <header>
-
-<a href="/index.html" class="logo-link">
-  <div style="display: flex; justify-content: start; align-items: center; height: 100%;padding: 10px;">
-    <h1 id="logo"><img style="width: 200px;" src="images/course/logo.png" alt="パステル音楽教室ロゴ"><span class="l"
-        style="font-size:1.5rem;color: #31bdad">パステル音楽教室</span>
-    </h1>
-  </div>
-</a>
+  <header style="z-index: 9999;">
+    <a href="#" class="logo-link">
+      <div style="display: flex; justify-content: start; align-items: center; height: 100%;padding: 10px;">
+        <h1 id="logo"><img style="width: 200px;" src="images/course/logo.png" alt="パステル音楽教室ロゴ"><span class="l"
+            style="font-size:1.5rem;color: #31bdad">パステル音楽教室</span>
+        </h1>
+      </div>
+    </a>
 
     <!--開閉ブロック-->
     <div id="menubar">
 
-      <nav>
+    <nav style="margin-top: 70px; important!">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/index.html#greeting">ごあいさつ</a></li>
@@ -68,11 +131,13 @@
 
   </header>
 
-  <div id="video">
-    <video src="images/movie_landscape.mp4" autoplay loop muted playsinline class="landscape"></video>
-    <video src="images/movie_portrait.mp4" autoplay loop muted playsinline class="portrait"></video>
+<h2 class="video-title"><img src="images/fluete&Ocarina.webp" alt="Flute&Ocarina|パステル音楽教室ロゴ" loading="eager"
+    fetchpriority="high"> </h2>
+<div id="video">
+  <video src="images/movie_landscape.mp4" autoplay loop muted playsinline class="landscape" preload="none"></video>
+  <video src="images/movie_portrait.mp4" autoplay loop muted playsinline class="portrait" preload="none"></video>
   </div>
-  <main>
+<main id="main-content">
     <section class="section" style="color: rgb(73, 68, 68);">
       <h2 id="access">Access</h2>
       <p>神奈川県座間市相模が丘５丁目</p>
